@@ -4,6 +4,8 @@
 *********************************/
 package com.tsg.unittesting.arrays;
 
+import java.util.Locale;
+
 /**
  *
  * @author ahill
@@ -22,7 +24,21 @@ public class ArrayExerciseE {
      */
 
     public static String camelCaseIt(String[] words){
-        throw new UnsupportedOperationException("Code not yet written...!");
+        // throw new UnsupportedOperationException("Code not yet written...!");
+
+        // convert to carmel case
+        for (int i = 0; i < words.length; i++) {
+           words[i] = words[i].toLowerCase();
+           if (i != 0) {
+               words[i] = words[i].substring(0, 1).toUpperCase() + words[i].substring(1);
+           }
+        }
+
+        String combineText = String.join("", words);
+
+        return combineText;
+
+
     }
     
 }
