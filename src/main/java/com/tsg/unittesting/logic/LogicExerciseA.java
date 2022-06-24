@@ -27,7 +27,21 @@ public class LogicExerciseA {
      * @return String greeting
      */
     public static String friendlyGreeting(String visitorName, boolean isFriend) {
-        throw new UnsupportedOperationException("Code not yet written...!");
+        // throw new UnsupportedOperationException("Code not yet written...!");
+        String greeting = "...";
+
+        // logical
+        if (visitorName != null)  {
+            if (isFriend) {
+                greeting = "Hello, " + visitorName + "!";
+            } else if (!isFriend) {
+                greeting = "hi";
+            }
+        } else {
+            greeting = "...";
+        }
+
+        return greeting;
     }
 
 }
