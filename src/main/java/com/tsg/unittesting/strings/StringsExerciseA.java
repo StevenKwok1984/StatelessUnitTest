@@ -4,6 +4,8 @@
 *********************************/
 package com.tsg.unittesting.strings;
 
+import java.util.Locale;
+
 /**
  *
  * @author ahill
@@ -23,6 +25,7 @@ public class StringsExerciseA {
      * @return String yell
      */
     public static String yell(String word){
-        throw new UnsupportedOperationException("Code not yet written...!");
+        //throw new UnsupportedOperationException("Code not yet written...!");
+        return word.toUpperCase(Locale.ROOT);
     }
 }
