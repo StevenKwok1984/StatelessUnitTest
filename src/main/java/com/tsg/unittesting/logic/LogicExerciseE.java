@@ -38,6 +38,23 @@ public class LogicExerciseE {
      */
     public static String whatColor(int waveLengthNM, int frequencyTHZ, double photonicEnergyEV) {
         throw new UnsupportedOperationException("Code not yet written...!");
+
+        if (between(waveLengthNM, 380, 450)
+                && between(frequencyTHZ, 668, 789)
+                && between(photonicEnergyEV, 2.75, 3.26)) {
+            if (waveLengthNM == 450 && frequencyTHZ == 668 && photonicEnergyEV== 2.75) {
+
+            }
+        } else {
+
+        }
+    }
+
+    public static boolean between(double i, double minValueInclusive, double maxValueInclusive) {
+        if (i >= minValueInclusive && i <= maxValueInclusive)
+            return true;
+        else
+            return false;
     }
 
 }
